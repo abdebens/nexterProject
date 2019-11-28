@@ -1,0 +1,36 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "your home, your freedom",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "nodejs": "0.0.0",
+    "postcss-cli": "^6.1.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^7.0.21"
+  },
+  "scripts": {
+    "watch": "node-sass sass/main.scss ./css/style.css -w",
+    "compile": "node-sass sass/main.scss ./css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile prefix compress"
+  },
+  "keywords": [
+    "home",
+    "buy",
+    "home",
+    "lexery",
+    "home",
+    "sell",
+    "home",
+    "big",
+    "home"
+  ],
+  "author": "abdennasser",
+  "license": "ISC"
+}
